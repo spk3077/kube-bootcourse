@@ -1,0 +1,1 @@
+A deployment is a higher level wrapper around a replica set

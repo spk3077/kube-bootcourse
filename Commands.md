@@ -40,4 +40,19 @@ kubectl delete pod PODNAME
 
 # Wide output which includes IP addresses
 kubectl get pods -o wide
+
+# You can set up a webserver to view status of pods in your browser
+kubectl proxy
+# http://127.0.0.1:8001/api/v1/namespaces/default/pods
+
+# Look at the YAML file for our current deployment
+kubectl get deployment synergychat-web -o yaml > my-deployment.yaml
+
+# Edit the YAML then apply it 
+kubectl apply -f web-deployment.yaml
+
+# Viewing replicasets
+kubectl get replicasets
+
+
 ```

@@ -23,3 +23,8 @@ To zoom way out, Kubernetes' job is to run software applications, and applicatio
 Kubernetes' job is to manage those resources and allocate them to the applications that are running on it.
 
 Kubernetes manages the resources that applications require and automatically distributes the load across nodes
+
+Deployments describe your desired state, the deployment controller's job is to make the current state match the desired statess
+
+ReplicaSet maintains a stable set of replica Pods running at any given time. It's the thing that makes sure that the number of Pods you want running is the same number of pods that are actually running.
+- A deployment is a higher-level abstraction that manages the replicasets for you. You can think of Deployments as a wrapper around a ReplicaSet
